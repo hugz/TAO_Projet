@@ -23,6 +23,22 @@ const map <Position, unsigned> & Monde::getMap() const
     return Carte;
 }
 
+void Monde::ajouterElement(Element & ele)
+{
+    push_back(&ele);
+    //Carte.insert(pair<Position, unsigned>(pos, size()-1));
+}
+
+bool Monde::isCaseEmpty(Position pPos)
+{
+    map<Position, unsigned int>::const_iterator Iter;
+    for(Iter=getMap().begin(); Iter!=getMap().end() ; Iter++)
+    {
+        return!(Iter->first.getPosX()==pPos.getPosX() && Iter->first.getPosY()==pPos.getPosY());
+    }
+    return false;
+}
+
 void Monde::afficher() const
 {
     cout<<"Vector : "<<endl;
