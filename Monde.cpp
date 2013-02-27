@@ -18,6 +18,11 @@ Monde::Monde()
     Carte.insert(pair<Position, unsigned>(pos, size()-1));
 }
 
+map <Position, unsigned> Monde::getMap() const
+{
+    return Carte;
+}
+
 void Monde::afficher() const
 {
     cout<<"Vector : "<<endl;
