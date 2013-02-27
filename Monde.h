@@ -3,26 +3,20 @@
 
 #include<string>
 #include<vector>
+#include<map>
 #include "Position.h"
 #include "Element.h"
 
 using namespace std;
 
-class Element public vector
+class Monde : public vector<Element *>
 {
     private :
-		string Nom;
-		Position Pos;
-		//Pour l'exemple, on prend que la position et le nom. On rajoutera les autres attributs plus tard.
+		map <Position, unsigned> Carte;
 
 	public :
-		Element();
-		Element(const string pNom, const Position pPos);
-		Element(const string pNom, unsigned int pX, unsigned int pY);
-		void setNom(const string pNom);
-		void setPos(const Position pPos);
-		string getNom() const;
-        Position getPos() const;
+		Monde();
+		void afficher() const;
 };
 
 #endif

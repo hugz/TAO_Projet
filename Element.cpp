@@ -8,11 +8,11 @@ Element::Element()
 {
 }
 
-Element::Element(const string pNom, const Position pPos): Nom(pNom), Position(pPos)
+Element::Element(const string pNom, const Position pPos): Nom(pNom), Pos(pPos)
 {
 }
 
-Element::Element(const string pNom, unsigned int pX, unsigned int pY): Nom(pNom), Position(pX, pY)
+Element::Element(const string pNom, unsigned int pX, unsigned int pY): Nom(pNom), Pos(pX, pY)
 {
 }
 
@@ -31,7 +31,12 @@ string Element::getNom() const
     return Nom;
 }
 
-Position Position::getPosX() const
+Position Element::getPos() const
 {
     return Pos;
+}
+
+void Element::affichger() const
+{
+    cout<<"Nom de l'element : "<<Nom<<"\nPosition en X : "<<Pos.getPosX()<<", Position en Y : "<<Pos.getPosY()<<"\n\n";
 }

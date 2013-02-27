@@ -21,6 +21,7 @@ class Element
 		void setPos(const Position pPos);
 		string getNom() const;
         Position getPos() const;
+        void afficher() const;
 };
 
 #endif

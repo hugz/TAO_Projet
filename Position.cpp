@@ -27,3 +27,8 @@ unsigned int Position::getPosY()
 {
     return y;
 }
+
+bool Position::operator < (const Position & pPos) const
+{
+    return (x<pPos.x || (x==pPos.x && y<pPos.y));
+}
