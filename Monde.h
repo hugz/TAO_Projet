@@ -16,7 +16,7 @@ class Monde : public vector<Element *>
 
 	public :
 		Monde();
-		map <Position, unsigned> getMap() const;
+		const map <Position, unsigned> & getMap() const;
 		void afficher() const;
 };
 

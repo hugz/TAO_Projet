@@ -1,6 +1,7 @@
 #include "Element.h"
 #include"Position.h"
 #include<string>
+#include<iostream>
 
 using namespace std;
 
@@ -36,7 +37,7 @@ Position Element::getPos() const
     return Pos;
 }
 
-void Element::affichger() const
+void Element::afficher() const
 {
     cout<<"Nom de l'element : "<<Nom<<"\nPosition en X : "<<Pos.getPosX()<<", Position en Y : "<<Pos.getPosY()<<"\n\n";
 }

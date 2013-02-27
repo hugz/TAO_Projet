@@ -18,12 +18,12 @@ void Position::setPosY(unsigned int pY)
     y = pY;
 }
 
-unsigned int Position::getPosX()
+unsigned int Position::getPosX() const
 {
     return x;
 }
 
-unsigned int Position::getPosY()
+unsigned int Position::getPosY() const
 {
     return y;
 }

@@ -12,8 +12,8 @@ class Position
 		Position(unsigned int pX, unsigned int pY);
 		void setPosX(unsigned int pX);
 		void setPosY(unsigned int pY);
-        unsigned int getPosX();
-        unsigned int getPosY();
+        unsigned int getPosX() const;
+        unsigned int getPosY() const;
         bool operator < (const Position & pPos) const;
 };
 

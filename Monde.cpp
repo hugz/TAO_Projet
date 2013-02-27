@@ -18,7 +18,7 @@ Monde::Monde()
     Carte.insert(pair<Position, unsigned>(pos, size()-1));
 }
 
-map <Position, unsigned> Monde::getMap() const
+const map <Position, unsigned> & Monde::getMap() const
 {
     return Carte;
 }
@@ -34,5 +34,5 @@ void Monde::afficher() const
     map<Position, unsigned int>::const_iterator Iter;
 
     for(Iter=getMap().begin(); Iter!=getMap().end() ; Iter++)
-        cout<<Iter->first<<" "<<Iter->second<<endl;
+        cout<<Iter->first.getPosX()<<" "<<Iter->first.getPosY()<<" "<<Iter->second<<endl;
 }
