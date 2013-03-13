@@ -26,7 +26,7 @@ const map <Position, unsigned> & Monde::getMap() const
 void Monde::ajouterElement(Element & ele)
 {
     push_back(&ele);
-    //Carte.insert(pair<Position, unsigned>(pos, size()-1));
+    Carte.insert(pair<Position, unsigned>(ele.getPos(), size()-1));
 }
 
 bool Monde::isCaseEmpty(Position pPos)
