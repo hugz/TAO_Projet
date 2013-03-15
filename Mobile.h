@@ -1,5 +1,3 @@
-
-
  #ifndef MOBILE_H
  #define MOBILE_H
 
@@ -15,7 +13,6 @@
  {
      private :
      unsigned int Vitesse ;
-     unsigned int Vision ;
 
    public :
        ///////CONSTRUCTEUR//////
@@ -24,9 +21,8 @@
 
       ///////GETTER & SETTER//////
      void setVitesse(const unsigned int pVitesse);
-     void setVision(const unsigned int pVision);
      unsigned int getVitesse() const;
-     unsigned int getVision() const;
+     bool seDeplacer(unsigned int pDirection);
 
  };
 
