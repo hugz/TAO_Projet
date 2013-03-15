@@ -11,6 +11,7 @@
 
 #include "Element.h"
 #include"Position.h"
+#include "Ressources.h"
 #include<string>
 #include<iostream>
 
@@ -24,16 +25,16 @@ Ressources::Ressources(const string pNom, const Position pPos, unsigned int pQte
 {
 }
 
-Element::Element(const string pNom, unsigned int pX, unsigned int pY, unsigned int pQte): Element(pNom, Pos(pX, pY)), qteRes(pQte)
+Ressources::Ressources(const string pNom, unsigned int pX, unsigned int pY, unsigned int pQte): Element(pNom, Position(pX, pY)), qteRes(pQte)
 {
 }
 
-void Ressources::setRessources(unsigned int pQte)
+void Ressources::setQte(unsigned int pQte)
 {
     qteRes = pQte;
 }
 
-unsigned int Ressources::getPos()
+unsigned int Ressources::getQte()
 {
     return qteRes;
 }

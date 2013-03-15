@@ -11,7 +11,7 @@
  {
  }
 
- Mobile::Mobile(String pNom , Position pPos) : Element(pNom,pPos) , Vitesse(GiveRand(1,3)) ,  Vision(GiveRand(1,3))
+ Mobile::Mobile(string pNom , Position pPos) : Element(pNom,pPos) , Vitesse(GiveRand(1,3)) ,  Vision(GiveRand(1,3))
  {
  }
 
