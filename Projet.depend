@@ -65,38 +65,3 @@
 	<string>
 	<iostream>
 
-1361980089 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\element.cpp
-	"Element.h"
-	"Position.h"
-	<string>
-	<iostream>
-
-1363170332 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\element.h
-	<string>
-	"Position.h"
-
-1361980089 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\position.h
-
-1361980089 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\monde.h
-	<string>
-	<vector>
-	<map>
-	"Position.h"
-	"Element.h"
-
-1361980219 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\main.cpp
-	<iostream>
-	"monde.h"
-
-1361980089 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\monde.cpp
-	<string>
-	<vector>
-	<map>
-	<iostream>
-	"Position.h"
-	"Element.h"
-	"Monde.h"
-
-1361980089 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\position.cpp
-	"Position.h"
-
