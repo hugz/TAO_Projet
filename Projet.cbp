@@ -38,6 +38,8 @@
 		<Unit filename="Monde.h" />
 		<Unit filename="Position.cpp" />
 		<Unit filename="Position.h" />
+		<Unit filename="Ressources.cpp" />
+		<Unit filename="Ressources.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

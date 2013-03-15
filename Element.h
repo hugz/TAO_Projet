@@ -6,12 +6,14 @@
 
 using namespace std;
 
+class Monde;
 class Element
 {
     private :
 		string Nom;
 		Position Pos;
-		//Pour l'exemple, on prend que la position et le nom. On rajoutera les autres attributs plus tard.
+		Monde * World;
+		//Pour l'exemple, on ne prend que la position et le nom en attribut. On rajoutera les autres attributs plus tard.
 
 	public :
 		Element();
@@ -23,5 +25,6 @@ class Element
         Position getPos() const;
         void afficher() const;
 };
+#include "Monde.h"
 
 #endif
