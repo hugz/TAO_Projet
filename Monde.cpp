@@ -10,17 +10,53 @@ using namespace std;
 
 Monde::Monde()
 {
-    Position pos(1, 3);
-    Element * elt = new Element("Toto", pos);
-
-    push_back(elt);
-
-    Carte.insert(pair<Position, unsigned>(pos, size()-1));
 }
 
 const map <Position, unsigned> & Monde::getMap() const
 {
     return Carte;
+}
+
+void Monde::ajouterElement(Element & ele)
+{
+    if(isCaseEmpty(ele.getPos()))
+    {
+        if(isParite(ele.getPos()))
+        {
+            push_back(&ele);
+            Carte.insert(pair<Position, unsigned>(ele.getPos(), size()-1));
+        }
+        else
+        {
+            cout<<"Parite de la position non respecté\n";
+        }
+    }
+    else
+    {
+        cout<<"Case non vide\n";
+    }
+}
+
+bool Monde::isCaseEmpty(Position pPos)
+{
+    map<Position, unsigned int>::const_iterator Iter;
+
+    if(Carte.find(pPos) == Carte.end())
+    {
+        return true;
+    }
+
+    return false;
+}
+
+bool Monde::isParite(Position pPos)
+{
+    if(pPos.getPosX() % 2 == pPos.getPosY() % 2)
+    {
+        return true;
+    }
+
+    return false;
 }
 
 void Monde::afficher() const
