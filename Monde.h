@@ -6,6 +6,7 @@
 #include<map>
 #include "Position.h"
 #include "Element.h"
+#include "Mobile.h"
 
 using namespace std;
 

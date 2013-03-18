@@ -2,6 +2,7 @@
 #include"monde.h"
 #include "Mobile.h"
 #include "Random.h"
+#include "Monde.h"
 using namespace std;
 
 int main()
@@ -20,17 +21,14 @@ int main()
     M.ajouterElement(*elt2);
     cout<<"Ajout de elt3\n";
     M.ajouterElement(*elt3);
-    M.afficher();
 
     Mobile Mob1("Pretre",pos4);
+
     M.ajouterElement(Mob1);
     M.afficher();
-    //Mob1.seDeplacer(2);
-     map<Position, unsigned> card;
-     card=M.getMap();
-    //card.find(Mob1.getPos());
 
-    //Mob1.getPos().setPosY(8);
+    M.at(M.getMap().find(pos4)->second)->afficher();
+
     cout<<"APRES SE DEPLACE\n"<<"";
 
     M.afficher();

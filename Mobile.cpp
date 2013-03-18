@@ -41,8 +41,7 @@
             //quand on vas vers le nord on inc l'ordonnée de +2
 
             getPos().setPosY(getPos().getPosY()+2);
-
-           setPos(Position(getPos().getPosX(),getPos().getPosY()));
+            setPos(Position(getPos().getPosX(),getPos().getPosY()));
             //return true;
         break;
 
