@@ -3,6 +3,7 @@
 #include "Mobile.h"
 #include "Random.h"
 #include "Monde.h"
+
 using namespace std;
 
 int main()
@@ -25,14 +26,14 @@ int main()
     M.ajouterElement(*elt3);
 
     Mobile Mob1("Pretre",pos4);
-    Mobile Mob2("bonne soeur",pos5);
+
 
     M.ajouterElement(Mob1);
-    M.ajouterElement(Mob2);
 
     cout<<"1er AFFICHAGE\n\n";
     M.afficher();
-    M.at(M.getMap().find(pos4)->second)->afficher();
+    M.at(M.getMap().find(pos4)->second)->agir();
+    //M.at(M.getMap().find(pos4)->second)->afficher();
 
     cout<<"APRES SE DEPLACE\n"<<"";
     cout<<"2eme AFFICHAGE\n\n";

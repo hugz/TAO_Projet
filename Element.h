@@ -7,6 +7,7 @@
 using namespace std;
 
 class Monde;
+
 class Element
 {
     private :
@@ -24,6 +25,7 @@ class Element
 		string getNom() const;
         Position getPos() const;
         void afficher() const;
+        virtual void agir() ;
 };
 #include "Monde.h"
 

@@ -23,6 +23,7 @@
      void setVitesse(const unsigned int pVitesse);
      unsigned int getVitesse() const;
      bool seDeplacer(unsigned int pDirection);
+     void agir();
 
  };
 

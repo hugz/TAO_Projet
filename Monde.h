@@ -22,9 +22,6 @@ class Monde : public vector<Element *>
         bool isCaseEmpty(Position pPos);
         bool isParite(Position pPos);
 		void afficher() const;
-		Mobile getElementMobile(Position pPos) const;
-
-
 
 };
 

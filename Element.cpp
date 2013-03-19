@@ -41,3 +41,8 @@ void Element::afficher() const
 {
     cout<<"Nom de l'element : "<<Nom<<"\nPosition en X : "<<Pos.getPosX()<<", Position en Y : "<<Pos.getPosY()<<"\n\n";
 }
+
+/*classe element polymorphe*/
+void Element::agir(){
+
+}
