@@ -73,3 +73,9 @@ void Monde::afficher() const
     for(Iter=getMap().begin(); Iter!=getMap().end() ; Iter++)
         cout<<Iter->first.getPosX()<<" "<<Iter->first.getPosY()<<" "<<Iter->second<<endl;
 }
+
+Mobile Monde::getElementMobile(Position pPos) const
+{
+    /*peut etre utiliser getMap().find(pos4) pour trouver le Mobile*/
+    return Mobile();
+}
