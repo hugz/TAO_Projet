@@ -18,6 +18,11 @@ const map <Position, unsigned> & Monde::getMap() const
     return Carte;
 }
 
+ map <Position, unsigned> & Monde::getMap()
+{
+    return Carte;
+}
+
 void Monde::ajouterElement(Element & ele)
 {
     if(isCaseEmpty(ele.getPos()))

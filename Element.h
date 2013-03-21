@@ -18,14 +18,16 @@ class Element
 
 	public :
 		Element();
-		Element(const string pNom, const Position pPos);
-		Element(const string pNom, unsigned int pX, unsigned int pY);
+		Element(const string pNom, const Position pPos, Monde * pWorld);
+		Element(const string pNom, unsigned int pX, unsigned int pY, Monde * pWorld);
+
 		void setNom(const string pNom);
 		void setPos(const Position pPos);
 		string getNom() const;
         Position getPos() const;
         void afficher() const;
         virtual void agir() ;
+        Monde * getMonde()  ;
 };
 #include "Monde.h"
 

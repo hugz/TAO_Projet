@@ -18,6 +18,7 @@ class Monde : public vector<Element *>
 	public :
 		Monde();
 		const map <Position, unsigned> & getMap() const;
+        map <Position, unsigned> & getMap();
         void ajouterElement(Element & ele);
         bool isCaseEmpty(Position pPos);
         bool isParite(Position pPos);

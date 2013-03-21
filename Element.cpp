@@ -9,11 +9,11 @@ Element::Element()
 {
 }
 
-Element::Element(const string pNom, const Position pPos): Nom(pNom), Pos(pPos)
+Element::Element(const string pNom, const Position pPos, Monde * pWorld): Nom(pNom), Pos(pPos) ,World(pWorld)
 {
 }
 
-Element::Element(const string pNom, unsigned int pX, unsigned int pY): Nom(pNom), Pos(pX, pY)
+Element::Element(const string pNom, unsigned int pX, unsigned int pY, Monde * pWorld): Nom(pNom), Pos(pX, pY), World(pWorld)
 {
 }
 
@@ -45,4 +45,8 @@ void Element::afficher() const
 /*classe element polymorphe*/
 void Element::agir(){
 
+}
+
+Monde * Element::getMonde() {
+    return World;
 }

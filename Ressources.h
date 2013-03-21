@@ -14,8 +14,8 @@ class Ressources : public Element
 
 	public :
 		Ressources();
-		Ressources(const string pNom, const Position pPos, unsigned int pQte);
-		Ressources(const string pNom, unsigned int pX, unsigned int pY, unsigned int pQte);
+		Ressources(const string pNom, const Position pPos, unsigned int pQte, Monde * pmonde);
+		Ressources(const string pNom, unsigned int pX, unsigned int pY, unsigned int pQte, Monde * pmonde);
 		void setQte(unsigned int pQte);
         unsigned int getQte();
         void afficher() const;

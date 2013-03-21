@@ -17,7 +17,7 @@
    public :
        ///////CONSTRUCTEUR//////
        Mobile();
-       Mobile(string pNom , Position pPos);
+       Mobile(string pNom , Position pPos, Monde * pmonde);
 
       ///////GETTER & SETTER//////
      void setVitesse(const unsigned int pVitesse);

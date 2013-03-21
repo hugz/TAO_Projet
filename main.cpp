@@ -14,9 +14,9 @@ int main()
     Position pos4(2, 6);
     Position pos5(4, 8);
 
-    Element * elt = new Element("Toto", pos);
-    Element * elt2 = new Element("Patrick", pos);
-    Element * elt3 = new Element("Loul", pos3);
+    Element * elt = new Element("Toto", pos,&M);
+    Element * elt2 = new Element("Patrick", pos,&M);
+    Element * elt3 = new Element("Loul", pos3,&M);
 
     cout<<"Ajout de elt\n";
     M.ajouterElement(*elt);
@@ -25,7 +25,7 @@ int main()
     cout<<"Ajout de elt3\n";
     M.ajouterElement(*elt3);
 
-    Mobile Mob1("Pretre",pos4);
+    Mobile Mob1("Pretre",pos4,&M);
 
 
     M.ajouterElement(Mob1);
