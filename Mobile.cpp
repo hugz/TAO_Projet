@@ -34,90 +34,96 @@
      SUD = 4,
      SUD_OUEST = 5,
      NORD_OUEST = 6;**/
+
     unsigned indice;
     Position oldPos = getPos();
     Position newPos;
-    cout<<"pos en X : "<<oldPos.getPosX()<<". pos en Y : "<<oldPos.getPosY()<<endl;
 
-    getMonde()->afficher();
-    cout<<"\ndb just avant : unsigned indice = getMonde()->getMap().find(oldPos)->second;\n"<<endl;
-
-    if (getMonde()->getMap().find(oldPos)== getMonde()->getMap().end())
-            cout<<"bug"<<endl;
-    else
      indice = getMonde()->getMap().find(oldPos)->second;
 
-
-    cout<<"db apres indice"<<endl;
      switch(pDirection)
      {
         case 1 :
-            cout<<"db case 1";
             newPos = Position(getPos().getPosX(),getPos().getPosY()+2);
             //quand on vas vers le nord on inc l'ordonnée de +2
+
+            if(getMonde()->isCaseEmpty(newPos)){
             setPos(Position(getPos().getPosX(),getPos().getPosY()+2));
             getMonde()->getMap().erase(oldPos);
             getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
-            //return true;
+            }
+
         break;
 
         case 2 :
             // +1 en ab +1 en ord
              newPos = Position(getPos().getPosX()+1,getPos().getPosY()+1);
-            setPos(Position(getPos().getPosX()+1,getPos().getPosY()+1));
 
-            getMonde()->getMap().erase(oldPos);
-            getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
+            if(getMonde()->isCaseEmpty(newPos)){
+                setPos(Position(getPos().getPosX()+1,getPos().getPosY()+1));
+                getMonde()->getMap().erase(oldPos);
+                getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
+            }
 
         break;
 
         case 3 :
             // +1 en ord -1 en abs
-             newPos = Position(getPos().getPosX()-1,getPos().getPosY()+1);
-            setPos(Position(getPos().getPosX()-1,getPos().getPosY()+1));
-            getMonde()->getMap().erase(oldPos);
-            getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
+            newPos = Position(getPos().getPosX()-1,getPos().getPosY()+1);
+
+            if(getMonde()->isCaseEmpty(newPos)){
+                setPos(Position(getPos().getPosX()-1,getPos().getPosY()+1));
+                getMonde()->getMap().erase(oldPos);
+                getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
+            }
 
         break;
 
         case 4 :
             //-2 en ord
              newPos = Position(getPos().getPosX(),getPos().getPosY()-2);
-            setPos(Position(getPos().getPosX(),getPos().getPosY()-2));
-            getMonde()->getMap().erase(oldPos);
-            getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
+
+            if(getMonde()->isCaseEmpty(newPos)){
+                setPos(Position(getPos().getPosX(),getPos().getPosY()-2));
+                getMonde()->getMap().erase(oldPos);
+                getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
+            }
 
         break;
 
         case 5 :
             //-1 en ord -1 en abs
              newPos = Position(getPos().getPosX()-1,getPos().getPosY()-1);
-            setPos(Position(getPos().getPosX()-1,getPos().getPosY()-1));
-            getMonde()->getMap().erase(oldPos);
-            getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
+
+            if(getMonde()->isCaseEmpty(newPos)){
+                setPos(Position(getPos().getPosX()-1,getPos().getPosY()-1));
+                getMonde()->getMap().erase(oldPos);
+                getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
+            }
 
         break;
 
         case 6 :
             //-1 en abs +1 en ord
              newPos = Position(getPos().getPosX()-1,getPos().getPosY()+1);
+
+            if(getMonde()->isCaseEmpty(newPos)){
             setPos(Position(getPos().getPosX()-1,getPos().getPosY()+1));
             getMonde()->getMap().erase(oldPos);
             getMonde()->getMap().insert(pair<Position,unsigned>(newPos,indice));
+            }
 
         break;
 
         default:
             return false;
-
         break;
-
      }
-
      return true;
  }
 
  void Mobile::agir(){
-     cout<<"db agir avant se déplacer.";
-     seDeplacer(1);
+    //seDeplacer(1);
+
+     seDeplacer(GiveRand(1,6));
  }

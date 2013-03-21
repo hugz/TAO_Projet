@@ -3,5 +3,7 @@
 
 unsigned int GiveRand(unsigned int pBorneMin, unsigned int pBorneMax )
 {
-    return rand()%(pBorneMax-pBorneMin)+pBorneMin;
+    int valRand=rand()%(pBorneMax-pBorneMin)+pBorneMin;
+
+    return valRand;
 }

@@ -3,11 +3,20 @@
 #include "Mobile.h"
 #include "Random.h"
 #include "Monde.h"
-
+#include <time.h>
+#include <stdlib.h>
 using namespace std;
 
 int main()
 {
+    /**
+        if(typeid(*at(i))==typeid(ressourceMobile))
+        test si cet élément (ressourceMobile) est présent autour de id
+    **/
+
+    //réinisialise le rand.
+    srand(time(NULL));
+
     Monde M;
     Position pos(1, 3);
     Position pos3(1, 4);

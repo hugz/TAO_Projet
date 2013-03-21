@@ -93,12 +93,14 @@
 	"Element.h"
 	"Mobile.h"
 
-1363857720 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\main.cpp
+1363858921 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\main.cpp
 	<iostream>
 	"monde.h"
 	"Mobile.h"
 	"Random.h"
 	"Monde.h"
+	<time.h>
+	<stdlib.h>
 
 1363708783 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\monde.cpp
 	<string>
@@ -134,7 +136,7 @@
 
 1363334061 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\random.h
 
-1363857626 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\mobile.cpp
+1363859022 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\mobile.cpp
 	"Element.h"
 	"Position.h"
 	"Mobile.h"
@@ -142,7 +144,7 @@
 	<string>
 	<iostream>
 
-1363334061 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\random.cpp
+1363858460 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\random.cpp
 	<cstdlib>
 	"Random.h"
 
