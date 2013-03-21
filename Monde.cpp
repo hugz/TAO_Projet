@@ -32,14 +32,6 @@ void Monde::ajouterElement(Element & ele)
             push_back(&ele);
             Carte.insert(pair<Position, unsigned>(ele.getPos(), size()-1));
         }
-        else
-        {
-            cout<<"Parite de la position non respecté\n";
-        }
-    }
-    else
-    {
-        cout<<"Case non vide\n";
     }
 }
 
