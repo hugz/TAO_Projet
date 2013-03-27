@@ -17,5 +17,9 @@ class Peuple : public Mobile
 
     public:
         Peuple();
-
+        static unsigned int getNbEleH;
+        static unsigned int getNbEleF;
+        static unsigned int getNbEleE;
+        static unsigned int qteQteResMob;
+        static unsigned int qteQteResMobImo;
 }
