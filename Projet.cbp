@@ -36,6 +36,8 @@
 			<Option compile="0" />
 		</Unit>
 		<Unit filename="Element.h" />
+		<Unit filename="Homme.cpp" />
+		<Unit filename="Homme.h" />
 		<Unit filename="Mobile.cpp" />
 		<Unit filename="Mobile.h" />
 		<Unit filename="Monde.cpp" />
@@ -48,6 +50,8 @@
 		<Unit filename="Random.h" />
 		<Unit filename="Ressources.cpp" />
 		<Unit filename="Ressources.h" />
+		<Unit filename="RessourcesImmobiles .cpp" />
+		<Unit filename="RessourcesImmobiles .h" />
 		<Unit filename="RessourcesMobiles.cpp" />
 		<Unit filename="RessourcesMobiles.h" />
 		<Unit filename="main.cpp" />

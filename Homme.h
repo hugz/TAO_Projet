@@ -19,6 +19,6 @@
      unsigned int getVision() const;
      //bool chasser();
      void agir();
- }
+ };
 
  #endif

@@ -1,28 +1,28 @@
 #include "Peuple.h"
 
-static unsigned int getNbEleH()
+ unsigned int Peuple::getNbEleH()
 {
     return nbEleH;
 }
 
-static unsigned int getNbEleF()
+ unsigned int Peuple::getNbEleF()
 {
     return nbEleF;
 }
-}
 
-static unsigned int getNbEleE()
+
+ unsigned int Peuple::getNbEleE()
 {
     return nbEleE;
 }
-}
 
-static unsigned int getQteResMob()
+
+ unsigned int Peuple::getQteResMob()
 {
     return qteResMob;
 }
 
-static unsigned int getQteResMobImo()
+ unsigned int Peuple::getQteResMobImo()
 {
     return qteResMobImo;
 }
