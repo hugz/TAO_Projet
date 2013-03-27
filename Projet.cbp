@@ -40,6 +40,8 @@
 		<Unit filename="Mobile.h" />
 		<Unit filename="Monde.cpp" />
 		<Unit filename="Monde.h" />
+		<Unit filename="Peuple.cpp" />
+		<Unit filename="Peuple.h" />
 		<Unit filename="Position.cpp" />
 		<Unit filename="Position.h" />
 		<Unit filename="Random.cpp" />
