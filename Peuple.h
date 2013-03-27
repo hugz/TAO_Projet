@@ -13,11 +13,12 @@ class Peuple
         static unsigned int qteResMobImo;
 
     public:
-         unsigned int getNbEleH();
-         unsigned int getNbEleF();
-         unsigned int getNbEleE();
-         unsigned int getQteResMob();
-         unsigned int getQteResMobImo();
+         Peuple();
+         static unsigned int getNbEleH();
+         static unsigned int getNbEleF();
+         static unsigned int getNbEleE();
+         static unsigned int getQteResMob();
+         static unsigned int getQteResMobImo();
 };
 
  #endif

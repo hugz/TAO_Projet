@@ -1,6 +1,8 @@
 #include "Element.h"
-#include"Position.h"
+#include "Position.h"
 #include "Ressources.h"
+#include "Random.h"
+#include "Mobile.h"
 #include "RessourcesImmobiles.h"
 #include<string>
 #include<iostream>
@@ -16,5 +18,5 @@ RessourcesImmobiles::RessourcesImmobiles(const string pNom, unsigned int pX, uns
 {}
 
 void RessourcesImmobiles::agir(){
-    seDeplacer(GiveRand(1,6));
+
 }
