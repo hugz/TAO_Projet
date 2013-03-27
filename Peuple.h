@@ -1,12 +1,9 @@
+ #ifndef PEUPLE_H
+ #define PEUPLE_H
+
 #include "Element.h"
-#include "Position.h"
-#include "Mobile.h"
-#include<string>
-#include<iostream>
 
-using namespace std;
-
-class Peuple : public Mobile
+class Peuple
 {
     private :
         static unsigned int nbEleH;
@@ -16,10 +13,11 @@ class Peuple : public Mobile
         static unsigned int qteResMobImo;
 
     public:
-        Peuple();
-        static unsigned int getNbEleH;
-        static unsigned int getNbEleF;
-        static unsigned int getNbEleE;
-        static unsigned int qteQteResMob;
-        static unsigned int qteQteResMobImo;
+        static unsigned int getNbEleH();
+        static unsigned int getNbEleF();
+        static unsigned int getNbEleE();
+        static unsigned int getQteResMob();
+        static unsigned int getQteResMobImo();
 }
+
+ #endif
