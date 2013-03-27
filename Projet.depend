@@ -1,0 +1,75 @@
+# depslib dependency file v1.0
+1364404885 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\main.cpp
+	<iostream>
+	"monde.h"
+	"Mobile.h"
+	"Random.h"
+	"Monde.h"
+	<time.h>
+	<stdlib.h>
+
+1364404885 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\monde.h
+	<string>
+	<vector>
+	<map>
+	"Position.h"
+	"Element.h"
+	"Mobile.h"
+
+1364404885 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\position.h
+
+1364404885 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\element.h
+	<string>
+	"Position.h"
+	"Monde.h"
+
+1364404885 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\mobile.h
+	<string>
+	<vector>
+	<map>
+	"Position.h"
+	"Element.h"
+
+1364404885 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\random.h
+
+1364404885 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\mobile.cpp
+	"Element.h"
+	"Position.h"
+	"Mobile.h"
+	"Random.h"
+	<string>
+	<iostream>
+
+1364404885 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\monde.cpp
+	<string>
+	<vector>
+	<map>
+	<iostream>
+	"Position.h"
+	"Element.h"
+	"Monde.h"
+	"Mobile.h"
+
+1364404885 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\position.cpp
+	"Position.h"
+
+1364404885 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\random.cpp
+	<cstdlib>
+	"Random.h"
+
+1364404885 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\ressources.cpp
+	"Element.h"
+	"Position.h"
+	"Ressources.h"
+	<string>
+	<iostream>
+
+1364404885 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\ressources.h
+	<string>
+	"Element.h"
+	"Position.h"
+
+1364404885 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\ressourcesmobiles.cpp
+
+1364405077 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\peuple.cpp
+

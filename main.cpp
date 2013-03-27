@@ -9,6 +9,7 @@ using namespace std;
 
 int main()
 {
+    //COMMIT!!!!!!!!
     /**
         if(typeid(*at(i))==typeid(ressourceMobile))
         test si cet élément (ressourceMobile) est présent autour de id
