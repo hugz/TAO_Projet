@@ -46,6 +46,8 @@
 		<Unit filename="Random.h" />
 		<Unit filename="Ressources.cpp" />
 		<Unit filename="Ressources.h" />
+		<Unit filename="RessourcesMobiles.cpp" />
+		<Unit filename="RessourcesMobiles.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
