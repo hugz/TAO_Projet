@@ -1,6 +1,8 @@
 #include "Random.h"
 #include "Position.h"
- #include "Homme.h"
+#include "Homme.h"
+#include "RessourcesMobiles.h"
+#include <typeinfo>
 
  Homme::Homme() : Vision(GiveRand(1,3))
  {
@@ -25,45 +27,45 @@
      for(int i=1;i<=6;i++)
      {
 
-         switch(pDirection)
+         switch(i)
          {
             case 1 :
-                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                if(typeid(getMonde().at(getMonde().getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid("PetitEnfant"))
                 {
 
                 }
             break;
 
             case 2 :
-                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                if(typeid(getMonde().at(getMonde().getMap().find(Position(getPos().getPosX()+1, getPos().getPosY()+1))->second))==typeid("PetitEnfant"))
                 {
 
                 }
             break;
 
             case 3 :
-                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                if(typeid(getMonde().at(getMonde().getMap().find(Position(getPos().getPosX()-1, getPos().getPosY()+1))->second))==typeid("PetitEnfant"))
                 {
 
                 }
             break;
 
             case 4 :
-                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                if(typeid(getMonde().at(getMonde().getMap().find(Position(getPos().getPosX(), getPos().getPosY()-2))->second))==typeid("PetitEnfant"))
                 {
 
                 }
             break;
 
             case 5 :
-                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                if(typeid(getMonde().at(getMonde().getMap().find(Position(getPos().getPosX()-1, getPos().getPosY()-1))->second))==typeid("PetitEnfant"))
                 {
 
                 }
             break;
 
             case 6 :
-                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                if(typeid(getMonde().at(getMonde().getMap().find(Position(getPos().getPosX()-1, getPos().getPosY()+1))->second))==typeid("PetitEnfant"))
                 {
 
                 }
@@ -72,7 +74,6 @@
             default:
             break;
          }
-         if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
      }
  }
 
