@@ -1,5 +1,5 @@
- #ifndef PEUPLE_H
- #define PEUPLE_H
+#ifndef PEUPLE_H
+#define PEUPLE_H
 
 #include "Element.h"
 
@@ -13,11 +13,11 @@ class Peuple
         static unsigned int qteResMobImo;
 
     public:
-         unsigned int getNbEleH();
-         unsigned int getNbEleF();
-         unsigned int getNbEleE();
-         unsigned int getQteResMob();
-         unsigned int getQteResMobImo();
+        static unsigned int getNbEleH();
+        static unsigned int getNbEleF();
+        static unsigned int getNbEleE();
+        static unsigned int getQteResMob();
+        static unsigned int getQteResMobImo();
 };
 
  #endif

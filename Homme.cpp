@@ -1,4 +1,5 @@
 #include "Random.h"
+#include "Position.h"
  #include "Homme.h"
 
  Homme::Homme() : Vision(GiveRand(1,3))
@@ -19,11 +20,63 @@
      return Vision;
  }
 
- /*bool Homme::chasser()
+ void Homme::chasser()
  {
+     for(int i=1;i<=6;i++)
+     {
 
- }*/
+         switch(pDirection)
+         {
+            case 1 :
+                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                {
+
+                }
+            break;
+
+            case 2 :
+                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                {
+
+                }
+            break;
+
+            case 3 :
+                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                {
+
+                }
+            break;
+
+            case 4 :
+                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                {
+
+                }
+            break;
+
+            case 5 :
+                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                {
+
+                }
+            break;
+
+            case 6 :
+                if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+                {
+
+                }
+            break;
+
+            default:
+            break;
+         }
+         if(typeid(getMonde.at(getMonde.getMap().find(Position(getPos().getPosX(), getPos().getPosY()+2))->second))==typeid(ressourceMobile))
+     }
+ }
 
  void Homme::agir(){
    //chasser();
+   seDeplacer(GiveRand(1,3));
  }

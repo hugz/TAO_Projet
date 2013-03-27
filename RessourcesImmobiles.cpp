@@ -16,5 +16,4 @@ RessourcesImmobiles::RessourcesImmobiles(const string pNom, unsigned int pX, uns
 {}
 
 void RessourcesImmobiles::agir(){
-    seDeplacer(GiveRand(1,6));
 }

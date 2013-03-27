@@ -9,7 +9,7 @@
 
 using namespace std;
 
- class RessourcesImmobiles : public Ressources
+ class RessourcesImmobiles : public Ressources, public Mobile
  {
      private :
          RessourcesImmobiles();
