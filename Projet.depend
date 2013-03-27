@@ -69,9 +69,15 @@
 	"Element.h"
 	"Position.h"
 
-1364404885 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\ressourcesmobiles.cpp
+1364414420 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\ressourcesmobiles.cpp
+	"Element.h"
+	"Position.h"
+	"Ressources.h"
+	"RessourcesMobiles.h"
+	<string>
+	<iostream>
 
-1364416471 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\peuple.cpp
+1364418735 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\peuple.cpp
 	"Peuple.h"
 
 1364415964 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\homme.cpp
@@ -82,8 +88,41 @@
 	"Peuple.h"
 	"Mobile.h"
 
-1364416506 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\peuple.h
+1364418048 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\peuple.h
 	"Element.h"
+
+1364417666 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\ressourcesimmobiles .cpp
+	"Element.h"
+	"Position.h"
+	"Ressources.h"
+	"Random.h"
+	"Mobile.h"
+	"RessourcesImmobiles.h"
+	<string>
+	<iostream>
+
+1364415627 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\ressourcesimmobiles.h
+	<string>
+	<vector>
+	<map>
+	"Position.h"
+	"Ressources.h"
+
+1364415557 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\ressourcesmobiles.h
+	<string>
+	<vector>
+	<map>
+	"Position.h"
+	"Ressources.h"
+	"Random.h"
+
+1364419036 source:c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\enfant.cpp
+	"Random.h"
+	"Enfant.h"
+
+1364418983 c:\users\hugz2\documents\iut\c++\tao\projet\tao_projet\enfant.h
+	"Peuple.h"
+	"Mobile.h"
 
 1364415412 source:c:\users\killian\documents\github\tao_projet\homme.cpp
 	"Random.h"

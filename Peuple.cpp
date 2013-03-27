@@ -5,6 +5,9 @@ unsigned int Peuple::nbEleE = 0;
 unsigned int Peuple::qteResMob = 0;
 unsigned int Peuple::qteResMobImo = 0;
 
+Peuple::Peuple()
+{}
+
  unsigned int Peuple::getNbEleH()
 {
     return nbEleH;
