@@ -17,7 +17,7 @@
       ///////GETTER & SETTER//////
      void setVision(const unsigned int pVis);
      unsigned int getVision() const;
-     void chasser();
+     void violer();
      void agir();
  };
 
