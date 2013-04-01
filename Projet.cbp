@@ -7,8 +7,8 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin\Debug\Projet" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Debug\" />
+				<Option output="bin/Debug/Projet" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -16,8 +16,8 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin\Release\Projet" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option output="bin/Release/Projet" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -36,6 +36,10 @@
 			<Option compile="0" />
 		</Unit>
 		<Unit filename="Element.h" />
+		<Unit filename="Enfant.cpp" />
+		<Unit filename="Enfant.h" />
+		<Unit filename="Femme.cpp" />
+		<Unit filename="Femme.h" />
 		<Unit filename="Homme.cpp" />
 		<Unit filename="Homme.h" />
 		<Unit filename="Mobile.cpp" />
@@ -54,7 +58,9 @@
 		<Unit filename="RessourcesImmobiles.h" />
 		<Unit filename="RessourcesMobiles.cpp" />
 		<Unit filename="RessourcesMobiles.h" />
+		<Unit filename="config.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="quelquesExplications.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

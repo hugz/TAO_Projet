@@ -32,3 +32,28 @@ Peuple::Peuple()
 {
     return qteResMobImo;
 }
+
+void Peuple::addNbEleH()
+{
+    nbEleH++;
+}
+
+void Peuple::addNbEleF()
+{
+    nbEleF++;
+}
+
+void Peuple::addNbEleE()
+{
+    nbEleE++;
+}
+
+void Peuple::addQteResMob(unsigned int pQte)
+{
+    qteResMob = qteResMob + pQte;
+}
+
+void Peuple::addQteResMobImo(unsigned int pQte)
+{
+    qteResMobImo = qteResMobImo + pQte;
+}

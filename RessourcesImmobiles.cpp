@@ -10,11 +10,15 @@
 RessourcesImmobiles::RessourcesImmobiles()
 {}
 
-RessourcesImmobiles::RessourcesImmobiles(const string pNom, const Position pPos, unsigned int pQte, Monde * pPmonde): Ressources(pNom,pPos,pQte,pPmonde)
-{}
+RessourcesImmobiles::RessourcesImmobiles(const string pNom, const Position pPos, Monde * pPmonde, unsigned int pQte): Element(pNom,pPos,pPmonde)
+{
+    setQte(pQte);
+}
 
-RessourcesImmobiles::RessourcesImmobiles(const string pNom, unsigned int pX, unsigned int pY, unsigned int pQte, Monde * pPmonde) : Ressources(pNom,pX,pY,pQte,pPmonde)
-{}
+RessourcesImmobiles::RessourcesImmobiles(const string pNom, unsigned int pX, unsigned int pY, Monde * pPmonde, unsigned int pQte) : Element(pNom,pX,pY, pPmonde)
+{
+    setQte(pQte);
+}
 
 void RessourcesImmobiles::agir(){
 

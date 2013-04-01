@@ -18,8 +18,8 @@ using namespace std;
      public :
 
          RessourcesMobiles();
-         RessourcesMobiles(const string pNom, const Position pPos, unsigned int pQte, Monde * pPmonde);
-         RessourcesMobiles(const string pNom, unsigned int pX, unsigned int pY, unsigned int pQte, Monde * pPmonde);
+         RessourcesMobiles(const string pNom, const Position pPos, Monde * pPmonde, unsigned int pQte);
+         RessourcesMobiles(const string pNom, unsigned int pX, unsigned int pY, Monde * pPmonde, unsigned int pQte);
          void agir();
          unsigned int getVision();
          void setVision(unsigned int pVision);

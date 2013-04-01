@@ -9,13 +9,14 @@
 
 using namespace std;
 
- class RessourcesImmobiles : public Ressources, public Mobile
+ class RessourcesImmobiles : public Ressources
  {
      private :
-         RessourcesImmobiles();
-         RessourcesImmobiles(const string pNom, const Position pPos, unsigned int pQte, Monde * pPmonde);
-         RessourcesImmobiles(const string pNom, unsigned int pX, unsigned int pY, unsigned int pQte, Monde * pPmonde);
+
      public :
+         RessourcesImmobiles();
+         RessourcesImmobiles(const string pNom, const Position pPos, Monde * pPmonde, unsigned int pQte);
+         RessourcesImmobiles(const string pNom, unsigned int pX, unsigned int pY, Monde * pPmonde, unsigned int pQte);
           void agir();
 
  };

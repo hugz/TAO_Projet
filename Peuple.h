@@ -3,7 +3,7 @@
 
 #include "Element.h"
 
-class Peuple
+class Peuple : public virtual Element
 {
     private :
         static unsigned int nbEleH;
@@ -19,6 +19,13 @@ class Peuple
         static unsigned int getNbEleE();
         static unsigned int getQteResMob();
         static unsigned int getQteResMobImo();
+
+        static void addNbEleH();
+        static void addNbEleF();
+        static void addNbEleE();
+        static void addQteResMob(unsigned int pQte);
+        static void addQteResMobImo(unsigned int pQte);
+
 };
 
  #endif

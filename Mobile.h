@@ -9,7 +9,7 @@
 
  using namespace std;
 
- class Mobile : public Element
+ class Mobile : public virtual  Element
  {
      private :
      unsigned int Vitesse ;

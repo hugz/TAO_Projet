@@ -13,11 +13,15 @@ private :
 RessourcesMobiles::RessourcesMobiles(): Vision(GiveRand(1,3))
 {}
 
-RessourcesMobiles::RessourcesMobiles(const string pNom, const Position pPos, unsigned int pQte, Monde * pPmonde): Ressources(pNom,pPos,pQte,pPmonde), Vision(GiveRand(1,3))
-{}
+RessourcesMobiles::RessourcesMobiles(const string pNom, const Position pPos, Monde * pPmonde, unsigned int pQte): Element(pNom,pPos,pPmonde), Vision(GiveRand(1,3))
+{
+    setQte(pQte);
+}
 
-RessourcesMobiles::RessourcesMobiles(const string pNom, unsigned int pX, unsigned int pY, unsigned int pQte, Monde * pPmonde) :Ressources(pNom,pX,pY,pQte,pPmonde),Vision(GiveRand(1,3))
-{}
+RessourcesMobiles::RessourcesMobiles(const string pNom, unsigned int pX, unsigned int pY, Monde * pPmonde, unsigned int pQte) : Element(pNom,pX,pY,pPmonde), Vision(GiveRand(1,3))
+{
+    setQte(pQte);
+}
 
 void RessourcesMobiles::agir(){
     seDeplacer(GiveRand(1,6));

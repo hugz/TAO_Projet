@@ -21,11 +21,11 @@ Ressources::Ressources(): qteRes(0)
 {
 }
 
-Ressources::Ressources(const string pNom, const Position pPos, unsigned int pQte,Monde * pPmonde): Element(pNom, pPos,pPmonde), qteRes(pQte)
+Ressources::Ressources(const string pNom, const Position pPos, Monde * pPmonde, unsigned int pQte) : Element(pNom, pPos, pPmonde), qteRes(pQte)
 {
 }
 
-Ressources::Ressources(const string pNom, unsigned int pX, unsigned int pY, unsigned int pQte,Monde * pPmonde): Element(pNom, Position(pX, pY),pPmonde), qteRes(pQte)
+Ressources::Ressources(const string pNom, unsigned int pX, unsigned int pY, Monde * pPmonde, unsigned int pQte) : Element(pNom, Position(pX, pY), pPmonde), qteRes(pQte)
 {
 }
 
